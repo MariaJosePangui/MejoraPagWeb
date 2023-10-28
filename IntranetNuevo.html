@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Servicios Intranet - Universidad de La Frontera</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="icon" href="https://intranet.ufro.cl/favicon1.gif" type="image/gif">
+  <link rel="shortcut icon" href="https://intranet.ufro.cl/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://intranet.ufro.cl/css/Style_bs.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<div class="container contenedor">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 banner_mini">
+      <img src="https://intranet.ufro.cl/imagenes/banner_a.jpg" border="0">
+    </div>
+    <div class="col-sm-12 col-md-12 banner_encabezado">
+      <img name="Ufro_intranet_ini" src="https://intranet.ufro.cl/imagenes/header2.webp?v2" border="0" usemap="#m_Ufro_intranet_ini" alt="" class="img-responsive">
+      <map name="m_Ufro_intranet_ini">
+        <area shape="rect" coords="200,5,320,75" target="_blank" href="https://acreditacion.ufro.cl/" alt="Autoevaluacion" title="Autoevaluacion">
+        <area shape="rect" coords="920,45,1020,85" href="http://www.ufro.cl/webmail/WebMailNS.htm" target="_blank"  alt="Webmail" title="Webmail">
+        <area shape="rect" coords="919,0,1020,43" href="http://www2.ufro.cl/buscador/" target="_blank"  alt="Buscador" title="Buscador">
+        <area shape="circle" coords="55,41, 42" href="http://www.ufro.cl" target="_blank" title="Sitio Universidad de la Frontera" alt="Sitio Universidad de la Frontera">
+      </map>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 contenedor_info">
+      <div class="w3-content">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;z-index:1;">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="foto/uni.png" style="width:85%;" alt="imagen1" >
+            </div>
+            <div class="item">
+              <img src="foto/imagen.jpg" style="width:100%;" alt="imagen2">
+            </div>
+            <div class="item">
+              <img src="foto/deporteufrof.png" style="width:100%;" alt="imagen3">
+            </div>
+            <div class="item">
+              <img src="foto/sofi.png" style="width:100%;" alt="imagen4">
+              </div>
+            <div class="item">
+              <img src="foto/arcoirirs.png" style="width:100%;" alt="imagen5">
+            </div>
+            <div class="item">
+              <img src="foto/robotica.png" style="width:100%;" alt="imagen6">
+            </div>
+            <div class="item">
+              <img src="foto/javier.png" style="width:100%;" alt="imagen7">
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only"><</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contenedor_info">
+      <br>
+      <center>
+        <form name="Formulario" id="Formulario" method="post">
+          <div class="row" style="padding-top:10px;">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+              <b>RUT:</b>(Sin puntos ni guión)
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+              <input type="text" name="Formulario[POPUSERNAME]" id="POPUSERNAME" maxLength="9" size="12" autofocus>
+            </div>
+          </div>
+          <div class="row" style="padding-top:10px;">
+            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+              <b>Clave Intranet:</b>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+              <input name="Formulario[XYZ]" type="password" maxLength="10" id="XYZ" size="12">
+            </div>
+          </div>
+          <div class="row" style="padding-top:10px;">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align:center">
+              <button type="button" class="btn btn-primary" onclick="Enviar()">Ingreso Intranet</button>
+            </div>
+          </div>
+          <div class="row" style="padding-top:30px;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align:center">
+              <a href="Javascript:Solicitud()" class="link_min">Olvidé mi Clave Intranet</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align:center">
+              <a href="Javascript:Solicitud()" class="link_min">Crear Clave Intranet</a>
+            </div>
+          </div>
+        </form>
+      </center>
+    </div>
+  </div>
+  <div class="row" style="padding-top:50px;">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <center>
+        <a href="http://www.ufro.cl" class="link_menu">Volver</a>
+      </center>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <center>
+        <a href="javascript:Acerca_de()" class="link_menu">Acerca de</a>
+      </center>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 pie">
+      <hr>
+      <p>
+        Av. Fco.Salazar 01145 Temuco - Chile - Casilla 54-D - Teléfono:(56)45-2325000 - Fax:(56)45-2325950<br>
+        Servicios y Soporte Técnico: <b>Dirección de Informática</b><br>Contacto:
+        <a href="mailto:wdinfo@ufrontera.cl">wdinfo@ufrontera.cl</a> - Teléfono:(56)45-2325500
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function Enviar(){
+    document.Formulario.action="autentificar.php";
+    document.Formulario.submit();
+  }
+
+  function Solicitud(){
+    document.Formulario.action="solicitud.php";
+    document.Formulario.submit();
+  }
+
+  function Acerca_de() {
+    window.open('acerca_de.html', 'newWnd', 'width=500,height=250,top=80,left=115,toolbar=0,status=0,scrollbars=0');
+  }
+</script>
+</body>
+</html>
